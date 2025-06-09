@@ -7,6 +7,7 @@
     <title>Em Sereyvathna - Full Stack Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/styles.css">
+
 </head>
 
 <body>
@@ -320,6 +321,12 @@
     </footer>
 
     <script>
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('Service Worker registered'));
+        }
+
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // --- START MODIFICATION TO ALWAYS GO TO HOME ON REFRESH ---

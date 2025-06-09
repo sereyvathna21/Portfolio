@@ -1,10 +1,11 @@
-<<<<<<< HEAD
 # Platfolio
 
 ## Overview
+
 Platfolio is a personal portfolio website designed to showcase the skills, projects, and experiences of Em Sereyvathna, a Full Stack Developer and Software Engineer. The website features a modern design with smooth scrolling, animations, and responsive layouts.
 
 ## Features
+
 - **Responsive Design**: The website is fully responsive, ensuring a seamless experience across devices.
 - **Smooth Scrolling**: Navigation links provide smooth scrolling to different sections of the page.
 - **Animations**: Elements animate on scroll for a dynamic user experience.
@@ -14,6 +15,7 @@ Platfolio is a personal portfolio website designed to showcase the skills, proje
 - **Contact Information**: Easy access to contact details.
 
 ## Technologies Used
+
 - HTML5
 - CSS3
 - JavaScript
@@ -21,6 +23,7 @@ Platfolio is a personal portfolio website designed to showcase the skills, proje
 - Figma for design mockups
 
 ## Installation
+
 To run this project locally, follow these steps:
 
 1. Clone the repository:
@@ -34,25 +37,27 @@ To run this project locally, follow these steps:
 3. Open the `index.html` file in your web browser.
 
 ## Usage
+
 - Navigate through the sections using the navigation bar.
 - Click on project cards to view details about each project.
 - Use the contact section to get in touch.
 
 ## Contribution
+
 Contributions are welcome! If you have suggestions or improvements, feel free to create a pull request.
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Author
+
 Em Sereyvathna  
 Full Stack Developer & Software Engineer  
 Email: [sereyvathna.em@student.cadt.edu.kh](mailto:sereyvathna.em@student.cadt.edu.kh)  
-Phone: (+855) 77 818 041  
+Phone: (+855) 77 818 041
 
 ## Acknowledgments
+
 - Thanks to the Cambodia Academy of Digital Technology for providing the knowledge and skills to create this portfolio.
 - Special thanks to the mentors and peers who supported the development of the projects showcased.
-=======
-# Portfolio
->>>>>>> 37f0bbf3475f17ca23b0f4a639c1f4e006631efc

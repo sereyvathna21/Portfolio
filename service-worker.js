@@ -1,7 +1,7 @@
 const CACHE_NAME = "pwa-cahce-v2";
 const FILES_TO_CACHE = [
   "./",
-  "./index.html",
+  "./public/index.html",
   "./css/styles.css",
   "./css/tailwind.css",
   "./images/Em_Sereyvathna-CV.png",

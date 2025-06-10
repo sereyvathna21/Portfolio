@@ -6,7 +6,7 @@ const FILES_TO_CACHE = [
   "./public/css/tailwind.css",
   "./public/images/Em_Sereyvathna-CV.png",
   "./public/images/Profile.jpeg",
-  "tailwind.config.js",
+  "./public/tailwind.config.js",
 ];
 
 self.addEventListener("install", (event) => {

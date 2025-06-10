@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa-notepad-v1";
+const CACHE_NAME = "pwa-cahce-v2";
 const FILES_TO_CACHE = [
   "./",
   "./index.html",

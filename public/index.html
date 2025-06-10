@@ -4,17 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Em Sereyvathna, a Full Stack Developer and Software Engineer specializing in front-end development, React, Vue.js, and modern web technologies.">
-    <title>Portfolio | Em Sereyvathna - Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"> <!-- MODIFIED PATH -->
 
+    <!-- Enhanced Meta Description -->
+    <meta name="description"
+        content="Em Sereyvathna - Full Stack Developer & Software Engineer from Cambodia specializing in React, Vue.js, Laravel, and Flutter. CADT student with expertise in modern web technologies and UX/UI design.">
+
+    <!-- Added Meta Keywords (though less important for modern SEO) -->
+    <meta name="keywords"
+        content="Em Sereyvathna, Cambodian Developer, Full Stack Developer, React Developer, Flutter Developer, CADT, Cambodia Academy of Digital Technology, Software Engineer">
+
+    <!-- Added Author Meta -->
+    <meta name="author" content="Em Sereyvathna">
+
+    <!-- Open Graph Protocol Tags for Better Social Sharing -->
+    <meta property="og:title" content="Em Sereyvathna | Full Stack Developer & Software Engineer">
+    <meta property="og:description"
+        content="Portfolio of Em Sereyvathna, a Full Stack Developer specializing in React, Vue.js, and modern web technologies from Cambodia.">
+    <meta property="og:image" content="https://emsereyvathna.vercel.app/images/Profile.jpeg">
+    <meta property="og:url" content="https://emsereyvathna.vercel.app/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Em Sereyvathna | Full Stack Developer">
+    <meta name="twitter:description"
+        content="Portfolio of Em Sereyvathna, a Full Stack Developer & Software Engineer from Cambodia specializing in modern web technologies.">
+    <meta name="twitter:image" content="https://emsereyvathna.vercel.app/images/Profile.jpeg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://emsereyvathna.vercel.app/">
+
+    <!-- Added meta robots tag -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Improved Title Tag with Primary Keyword First -->
+    <title>Em Sereyvathna | Full Stack Developer & Software Engineer Portfolio</title>
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="apple-touch-icon" href="images/Profile.jpeg">
+
+    <!-- External Resources -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/Profile.jpeg">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Person">
     <!-- Floating Background Shapes -->
-    <div class="floating-shapes">
+    <div class="floating-shapes" aria-hidden="true">
         <div class="shape"></div>
         <div class="shape"></div>
         <div class="shape"></div>
@@ -23,12 +64,15 @@
     </div>
 
     <!-- Scroll Follower -->
-    <div id="scroll-follower"></div>
+    <div id="scroll-follower" aria-hidden="true"></div>
 
     <!-- Navigation -->
-    <nav class="nav" id="navbar">
+    <nav class="nav" id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">Portfolio</div>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links" id="nav-links-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -40,20 +84,20 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Schema.org markup -->
     <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content fade-in">
-            <h1>Em Sereyvathna</h1>
-            <p class="subtitle">Full Stack Developer & Software Engineer</p>
-            <p class="description">
+            <h1 itemprop="name">Em Sereyvathna</h1>
+            <p class="subtitle" itemprop="jobTitle">Full Stack Developer & Software Engineer</p>
+            <p class="description" itemprop="description">
                 Passionate Computer Science student specializing in Front-end development with aspirations to become a
                 skilled Full-stack developer.
                 I love creating impactful solutions using modern technologies.
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary animate-on-scroll">Let's Connect -></a>
-                <a href="../../images/Em_Sereyvathna-CV.png" download="Em_Sereyvathna_CV.pdf"
+                <a href="images/Em_Sereyvathna-CV.png" download="Em_Sereyvathna_CV.pdf"
                     class="btn btn-secondary btn-cv-hero animate-on-scroll">
                     <i class="fas fa-download"></i> Download CV
                 </a>
@@ -61,17 +105,18 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section with improved semantic markup -->
     <section id="about" class="section">
         <h2 class="section-title animate-on-scroll">About Me</h2>
         <div class="about-container">
             <div class="profile-photo animate-on-scroll">
                 <div class="photo-frame">
-                    <img src="../../images/Profile.jpeg" alt="Em Sereyvathna" class="profile-img">
+                    <img src="images/Profile.jpeg" alt="Em Sereyvathna - Full Stack Developer from Cambodia"
+                        class="profile-img" itemprop="image">
                 </div>
             </div>
             <div class="about-text animate-on-scroll">
-                <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
+                <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;" itemprop="description">
                     I'm an adaptable Computer Science student at Cambodia Academy of Digital Technology (CADT) with
                     strong
                     technical and interpersonal skills.
@@ -86,10 +131,10 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section with relevant keywords -->
     <section id="skills" class="section">
         <h2 class="section-title animate-on-scroll">Skills & Technologies</h2>
-        <div class="skills-grid">
+        <div class="skills-grid" itemprop="knowsAbout">
             <div class="skill-card animate-on-scroll">
                 <div class="skill-icon"><i class="fab fa-html5"></i></div>
                 <h4>HTML</h4>
@@ -149,19 +194,21 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section with Schema.org markup -->
     <section id="projects" class="section">
         <h2 class="section-title animate-on-scroll">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card animate-on-scroll">
+            <div class="project-card animate-on-scroll" itemprop="makesOffer" itemscope
+                itemtype="http://schema.org/CreativeWork">
                 <div class="project-header">
-                    <h3>SmartSched - Capstone Project</h3>
+                    <h3 itemprop="name">SmartSched - Capstone Project</h3>
                     <p>Currently in Development</p>
                 </div>
                 <div class="project-body">
-                    <p>Leading a team as Scrum Master while developing the frontend and UX/UI design. A comprehensive
+                    <p itemprop="description">Leading a team as Scrum Master while developing the frontend and UX/UI
+                        design. A comprehensive
                         scheduling application built with modern web technologies.</p>
-                    <div class="project-tech">
+                    <div class="project-tech" itemprop="keywords">
                         <span class="tech-tag">React.js</span>
                         <span class="tech-tag">Figma</span>
                         <span class="tech-tag">API Integration</span>
@@ -170,15 +217,17 @@
                 </div>
             </div>
 
-            <div class="project-card animate-on-scroll">
+            <div class="project-card animate-on-scroll" itemprop="makesOffer" itemscope
+                itemtype="http://schema.org/CreativeWork">
                 <div class="project-header">
-                    <h3>Sak Tmor - Student Management</h3>
+                    <h3 itemprop="name">Sak Tmor - Student Management</h3>
                     <p>School Project with Mentors</p>
                 </div>
                 <div class="project-body">
-                    <p>Full-stack student management system with comprehensive UX/UI design. Integrated frontend and
+                    <p itemprop="description">Full-stack student management system with comprehensive UX/UI design.
+                        Integrated frontend and
                         backend with API connectivity.</p>
-                    <div class="project-tech">
+                    <div class="project-tech" itemprop="keywords">
                         <span class="tech-tag">Flutter</span>
                         <span class="tech-tag">Django</span>
                         <span class="tech-tag">Figma</span>
@@ -187,15 +236,17 @@
                 </div>
             </div>
 
-            <div class="project-card animate-on-scroll">
+            <div class="project-card animate-on-scroll" itemprop="makesOffer" itemscope
+                itemtype="http://schema.org/CreativeWork">
                 <div class="project-header">
-                    <h3>Web Development Project</h3>
+                    <h3 itemprop="name">Web Development Project</h3>
                     <p>Full-Stack Implementation</p>
                 </div>
                 <div class="project-body">
-                    <p>Developed complete web application with database design, API development using Laravel, and full
+                    <p itemprop="description">Developed complete web application with database design, API development
+                        using Laravel, and full
                         frontend implementation.</p>
-                    <div class="project-tech">
+                    <div class="project-tech" itemprop="keywords">
                         <span class="tech-tag">PHP</span>
                         <span class="tech-tag">Laravel</span>
                         <span class="tech-tag">Database Design</span>
@@ -206,76 +257,85 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience Section with Schema.org markup -->
     <section id="experience" class="section">
         <h2 class="section-title animate-on-scroll">Experience & Education</h2>
         <div class="timeline">
-            <div class="timeline-item animate-on-scroll">
+            <div class="timeline-item animate-on-scroll" itemprop="alumniOf" itemscope
+                itemtype="http://schema.org/EducationalOrganization">
                 <h3>Bachelor of Computer Science</h3>
-                <h4>Cambodia Academy of Digital Technology (CADT)</h4>
+                <h4 itemprop="name">Cambodia Academy of Digital Technology (CADT)</h4>
                 <p><strong>2024 - Present</strong></p>
-                <p>Specializing in Software Engineering, currently in Year 3. Focusing on full-stack development with
+                <p itemprop="description">Specializing in Software Engineering, currently in Year 3. Focusing on
+                    full-stack development with
                     emphasis on modern web technologies and software engineering practices.</p>
             </div>
 
-            <div class="timeline-item animate-on-scroll">
-                <h3>SmartSched - Capstone Project</h3>
-                <h4>Frontend Developer & Scrum Master</h4>
+            <div class="timeline-item animate-on-scroll" itemprop="worksFor" itemscope
+                itemtype="http://schema.org/Organization">
+                <h3 itemprop="name">SmartSched - Capstone Project</h3>
+                <h4 itemprop="jobTitle">Frontend Developer & Scrum Master</h4>
                 <p><strong>Present</strong></p>
-                <p>Leading team development as Scrum Master while contributing to frontend development using React.js.
+                <p itemprop="description">Leading team development as Scrum Master while contributing to frontend
+                    development using React.js.
                     Responsible for UX/UI design in Figma and API integration.</p>
             </div>
 
-            <div class="timeline-item animate-on-scroll">
-                <h3>Web Development Project</h3>
-                <h4>Full-Stack Developer</h4>
+            <div class="timeline-item animate-on-scroll" itemprop="worksFor" itemscope
+                itemtype="http://schema.org/Organization">
+                <h3 itemprop="name">Web Development Project</h3>
+                <h4 itemprop="jobTitle">Full-Stack Developer</h4>
                 <p><strong>AUS-SEP-OCT 2024</strong></p>
-                <p>Developed complete web application including database design, Laravel API development, and PHP
+                <p itemprop="description">Developed complete web application including database design, Laravel API
+                    development, and PHP
                     frontend implementation. Collaborated with team on all aspects of development.</p>
             </div>
 
-            <div class="timeline-item animate-on-scroll">
-                <h3>Sak Tmor - Student Management</h3>
-                <h4>Full-Stack & UX/UI Developer</h4>
+            <div class="timeline-item animate-on-scroll" itemprop="worksFor" itemscope
+                itemtype="http://schema.org/Organization">
+                <h3 itemprop="name">Sak Tmor - Student Management</h3>
+                <h4 itemprop="jobTitle">Full-Stack & UX/UI Developer</h4>
                 <p><strong>March 2024</strong></p>
-                <p>Worked with senior developers on comprehensive student management system. Developed UX/UI designs in
+                <p itemprop="description">Worked with senior developers on comprehensive student management system.
+                    Developed UX/UI designs in
                     Figma and implemented frontend using Flutter with Django backend.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer Section with Address and Contact Schema.org markup -->
     <footer id="contact" class="footer-section animate-on-scroll">
         <h2 class="section-title animate-on-scroll">Get In Touch</h2>
-        <div class="contact-info-container animate-on-scroll">
+        <div class="contact-info-container animate-on-scroll" itemscope itemtype="http://schema.org/ContactPoint">
             <div class="contact-item animate-on-scroll">
                 <i class="fas fa-phone"></i>
                 <div>
                     <h4>Telegram</h4>
-                    <p><a href="tel:+85577818041">(+855) 77 818 041</a></p>
+                    <p><a href="tel:+85577818041" itemprop="telephone">(+855) 77 818 041</a></p>
                 </div>
             </div>
             <div class="contact-item animate-on-scroll">
                 <i class="fas fa-envelope"></i>
                 <div>
                     <h4>Email</h4>
-                    <p><a href="mailto:sereyvathna.em@student.cadt.edu.kh">sereyvathna.em@student.cadt.edu.kh</a></p>
+                    <p><a href="mailto:sereyvathna.em@student.cadt.edu.kh"
+                            itemprop="email">sereyvathna.em@student.cadt.edu.kh</a></p>
                 </div>
             </div>
             <div class="contact-item animate-on-scroll">
                 <i class="fab fa-linkedin"></i>
                 <div>
                     <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/em-sereyvathna-71644127b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                            target="_blank" rel="noopener noreferrer">Em Sereyvathna</a></p>
+                    <p><a href="https://www.linkedin.com/in/em-sereyvathna-71644127b" target="_blank"
+                            rel="noopener noreferrer">Em Sereyvathna</a></p>
                 </div>
             </div>
             <div class="contact-item animate-on-scroll">
                 <i class="fab fa-facebook"></i>
                 <div>
                     <h4>Facebook</h4>
-                    <p><a href="https://www.facebook.com/share/16Vj2wQNvF/?mibextid=wwXIfr" target="_blank"
-                            rel="noopener noreferrer">Em Sereyvathna</a></p>
+                    <p><a href="https://www.facebook.com/share/16Vj2wQNvF/" target="_blank" rel="noopener noreferrer">Em
+                            Sereyvathna</a></p>
                 </div>
             </div>
 
@@ -290,20 +350,20 @@
             </div>
             <div class="contact-item animate-on-scroll">
                 <i class="fas fa-graduation-cap"></i>
-                <div>
+                <div itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
                     <h4>University</h4>
-                    <p><a href="https://cadt.edu.kh/" target="_blank" rel="noopener noreferrer">Cambodia Academy of
+                    <p><a href="https://cadt.edu.kh/" target="_blank" rel="noopener noreferrer" itemprop="name">Cambodia
+                            Academy of
                             Digital Technology</a></p>
                 </div>
             </div>
         </div>
 
         <div class="footer-social-links animate-on-scroll">
-            <a href="https://www.linkedin.com/in/em-sereyvathna-71644127b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/share/16Vj2wQNvF/?mibextid=wwXIfr" target="_blank"
-                rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/em-sereyvathna-71644127b" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/share/16Vj2wQNvF/" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
             <a href="https://github.com/sereyvathna21" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
                 title="GitHub"><i class="fab fa-github"></i></a>
         </div>
@@ -314,10 +374,11 @@
     </footer>
 
     <script>
-
+        // Register service worker for PWA support
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js')
-                .then(() => console.log('Service Worker registered'));
+                .then(() => console.log('Service Worker registered'))
+                .catch(error => console.error('Service Worker registration failed:', error));
         }
 
         document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -461,6 +522,44 @@
                 }
             });
         }
+    </script>
+
+    <!-- Add JSON-LD structured data for rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Em Sereyvathna",
+      "url": "https://emsereyvathna.vercel.app/",
+      "image": "https://emsereyvathna.vercel.app/images/Profile.jpeg",
+      "sameAs": [
+        "https://www.linkedin.com/in/em-sereyvathna-71644127b",
+        "https://github.com/sereyvathna21",
+        "https://www.facebook.com/share/16Vj2wQNvF/"
+      ],
+      "jobTitle": "Full Stack Developer & Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Cambodia Academy of Digital Technology (CADT)"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Cambodia Academy of Digital Technology",
+        "url": "https://cadt.edu.kh/"
+      },
+      "knowsAbout": [
+        "React", 
+        "Vue.js", 
+        "JavaScript", 
+        "TypeScript", 
+        "Laravel",
+        "Flutter",
+        "Full Stack Development",
+        "UX/UI Design",
+        "Software Engineering",
+        "Front-end Development"
+      ]
+    }
     </script>
 </body>
 

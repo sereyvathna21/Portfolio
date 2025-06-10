@@ -2,10 +2,10 @@ const CACHE_NAME = "pwa-cahce-v2";
 const FILES_TO_CACHE = [
   "./",
   "./public/index.html",
-  "./css/styles.css",
-  "./css/tailwind.css",
-  "./images/Em_Sereyvathna-CV.png",
-  "./images/Profile.jpeg",
+  "./public/css/styles.css",
+  "./public/css/tailwind.css",
+  "./public/images/Em_Sereyvathna-CV.png",
+  "./public/images/Profile.jpeg",
   "tailwind.config.js",
 ];
 
